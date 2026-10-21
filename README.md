@@ -36,7 +36,7 @@ More information is available on Bright’s:
 - [Website](https://www.brightsec.com/)
 - [Knowledge base](https://docs.brightsec.com/docs/quickstart)
 - [YouTube channel](https://www.youtube.com/channel/UCoIC0T1pmozq3eKLsUR2uUw)
-- [GitHub Actions](https://github.com/marketplace?query=neuralegion+)
+- [GitHub Actions](https://github.com/marketplace?query=brightsec+)
 
 # Inputs
 
@@ -196,7 +196,7 @@ ID of the created discovery.
 steps:
   - name: Start Bright Discovery
     id: start
-    uses: NeuraLegion/run-discovery@v1.1
+    uses: BrightSec/run-discovery@v1.1
     with:
       api_token: ${{ secrets.BRIGHTSEC_TOKEN }}
       name: GitHub discovery ${{ github.sha }}
