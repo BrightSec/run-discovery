@@ -38,7 +38,7 @@ jobs:
             [ ]
       - name: Stop the discovery 🛑
         id: stop
-        uses: NeuraLegion/stop-discovery@release
+        uses: BrightSec/stop-discovery@release
         with:
           api_token: ${{ secrets.BRIGHTSEC_TOKEN }}
           discovery_id: ${{ steps.discovery.outputs.id }}
@@ -55,7 +55,7 @@ jobs:
           restart_discovery_id: ${{ steps.discovery.outputs.id }}
       - name: Stop the restarted discovery 🛑
         id: stop-rerun
-        uses: NeuraLegion/stop-discovery@release
+        uses: BrightSec/stop-discovery@release
         with:
           api_token: ${{ secrets.BRIGHTSEC_TOKEN }}
           discovery_id: ${{ steps.discovery-rerun.outputs.id }}
